@@ -25,9 +25,12 @@
           <a class="main-logo link" href="./index.html"
             ><span class="logo-blue">WEB</span>STUDIO</a
           >
-          <svg class="burger">
-            <use href="./images/sprite.svg#icon-burger"></use>
-          </svg>
+          <button type="button" class="mobile-menu-btn">
+            <svg class="burger" width="32" height="22">
+              <use href="./images/sprite.svg#instagram"></use>
+            </svg>
+          </button>
+
           <ul class="menu list">
             <li class="menu-item">
               <a class="menu-link link current" href="./index.html">Studio</a>
@@ -47,7 +50,7 @@
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-item">
+            <li class="address-item address-tel">
               <a class="address-link link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
@@ -55,9 +58,73 @@
           </ul>
         </address>
       </div>
+      <div class="mobile-menu is-hidden">
+        <div class="container mobile-menu-container">
+          <button class="close-btn-mobile"  type="button">
+            <svg class="close-btn-mobile-image">
+              <use href="./images/sprite.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <ul class="menu-mobile list">
+            <li class="menu-mobile-item">
+              <a class="menu-mobile-link link current" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-mobile-item">
+              <a class="menu-mobile-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-mobile-item">
+              <a class="menu-mobile-link mobile-color link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="address-mobile-menu list">
+              <li class="address-mobile-item">
+              <a class="address-mobile-tel link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a>
+            </li>
+            <li class="address-mobile-item">
+              <a class="address-mobile-mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a>
+            </li>
+          
+          </ul>
+        </address>
+        <ul class="social-mobile-list list">
+                  <li>
+                    <a class="mobile-social-link" href="./index.html"
+                      ><svg class="mobile-social-image">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-social-link" href="./index.html"
+                      ><svg class="mobile-social-image">
+                        <use href="./images/sprite.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-social-link" href="./index.html"
+                      ><svg class="mobile-social-image">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="mobile-social-link" href="./index.html"
+                      ><svg class="mobile-social-image">
+                        <use href="./images/sprite.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
+      </div>
     </header>
 
-    <!-- <main>
+    <main>
       <section class="dark-bgc section-hero">
         <div class="head-section container">
           <h1 class="main-head">
@@ -68,9 +135,9 @@
             Order Service
           </button>
         </div>
-      </section>
+      </section> 
 
-      <section class="section">
+      <section class="section examples-section">
         <div class="container">
           <h2 class="section-head hidden">About Webstudio</h2>
           <ul class="examples-list list">
@@ -277,46 +344,46 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section customer-section">
         <div class="container">
           <h2 class="section-head">Customers</h2>
           <ul class="customer-list list">
-            <li>
+            <li class="customer-list-item">
               <a class="customer-list-link" href="./index.html">
                 <svg class="customer-list-image">
                   <use href="./images/sprite.svg#logo-customer"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-list-item">
               <a class="customer-list-link" href="./index.html"
                 ><svg class="customer-list-image">
                   <use href="./images/sprite.svg#logo-customer-2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-list-item">
               <a class="customer-list-link" href="./index.html"
                 ><svg class="customer-list-image">
                   <use href="./images/sprite.svg#logo-customer-3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-list-item">
               <a class="customer-list-link" href="./index.html">
                 <svg class="customer-list-image">
                   <use href="./images/sprite.svg#logo-customer-4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-list-item">
               <a class="customer-list-link" href="./index.html">
                 <svg class="customer-list-image">
                   <use href="./images/sprite.svg#logo-customer-5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="customer-list-item">
               <a class="customer-list-link" href="./index.html">
                 <svg class="customer-list-image">
                   <use href="./images/sprite.svg#logo-customer-6"></use>
@@ -325,10 +392,10 @@
             </li>
           </ul>
         </div>
-      <!-- </section>
-    </main> -->
+      </section>
+    </main> 
 
-    <!-- <footer class="dark-bgc-foot foot-section">
+    <footer class="dark-bgc-foot foot-section">
       <div class="container footer-flex">
         <div class="logo-container">
           <a class="main-logo foot-link" href="./index.html"
@@ -388,7 +455,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer> 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <form action="">
