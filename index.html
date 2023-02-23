@@ -57,7 +57,7 @@
           </ul>
         </address>
         <div class="mobile-menu is-open js-menu-container">
-          <div class="container mobile-menu-container">
+          <div class="mobile-menu-container">
             <button class="close-btn-mobile js-close-menu" type="button">
               <svg class="close-btn-mobile-image">
                 <use href="./images/sprite.svg#icon-close-btn"></use>
@@ -183,7 +183,7 @@
           <ul class="img-list list">
             <li class="image-list-item">
               <img
-                srcset="./images/monitor@2x.jpg 2x"
+                srcset="./images/monitor.jpg 1x, ./images/monitor@2x.jpg 2x"
                 src="./images/monitor.jpg"
                 alt="screen"
                 width="360"
@@ -191,7 +191,10 @@
             </li>
             <li class="image-list-item">
               <img
-                srcset="./images/copyingphone@2x.jpg 2x"
+                srcset="
+                  ./images/copyingphone.jpg    1x,
+                  ./images/copyingphone@2x.jpg 2x
+                "
                 src="./images/copingphone.jpg"
                 alt="sellphone"
                 width="360"
@@ -199,7 +202,10 @@
             </li>
             <li class="image-list-item">
               <img
-                srcset="./images/smartphone@2x.jpg 2x"
+                srcset="
+                  ./images/smartphone.jpg    1x,
+                  ./images/smartphone@2x.jpg 2x
+                "
                 src="./images/smartphone.jpg"
                 alt="notebook"
                 width="360"
@@ -215,7 +221,7 @@
           <ul class="team-list list">
             <li class="team-list-item">
               <img
-                srcset="./images/mark@2x.jpg 2x"
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="photo"
                 width="264"
@@ -257,7 +263,7 @@
             </li>
             <li class="team-list-item">
               <img
-                srcset="./images/tom@2x.jpg 2x"
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="photo"
                 width="264"
@@ -299,7 +305,7 @@
             </li>
             <li class="team-list-item">
               <img
-                srcset="./images/camilla@2x.jpg 2x"
+                srcset="./images/camilla.jpg 1x, ./images/camilla@2x.jpg 2x"
                 src="./images/camilla.jpg"
                 alt="photo"
                 width="264"
@@ -341,7 +347,7 @@
             </li>
             <li class="team-list-item">
               <img
-                srcset="./images/daniel@2x.jpg 2x"
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="photo"
                 width="264"
@@ -491,14 +497,14 @@
                 required
               />
             </label>
-            <button class="subscribe-button" tupe="submit">Subscribe</button>
+            <button class="subscribe-button" type="submit">Subscribe</button>
           </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <form action="">
+        <form>
           <button class="modal-btn" data-modal-close type="button">
             <svg class="modal-btn-image">
               <use href="./images/sprite.svg#icon-close-btn"></use>
@@ -517,7 +523,7 @@
                 placeholder=" "
                 pattern="[a-zA-Zа-яА-Я]+"
                 required
-                minlength="2 "
+                minlength="2"
               />
               <svg class="modal-form-icon">
                 <use href="./images/icons.svg#icon-person"></use>
